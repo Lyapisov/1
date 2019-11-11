@@ -5,7 +5,8 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="left-sidebar">
-                    <h2>Каталог</h2>
+                    <a href="/">
+                        <h2>Каталог</h2></a>
                     <div class="panel-group category-products">
                         <?php foreach ($categories as $categoryItem): ?>
                             <div class="panel panel-default">
@@ -37,7 +38,7 @@
                                         <h2><?php echo $product['price'];?>$</h2>
                                         <p>
                                             <a href="/product/<?php echo $product['id'];?>">
-                                                <?php echo $product['name'];?>
+                                               ID: <?php echo $product['id'];?>, <?php echo $product['name'];?>
                                             </a>
                                         </p>
                                         <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
@@ -49,7 +50,8 @@
                             </div>
                         </div>
                     <?php endforeach;?>                              
-                    
+
+                    <?php echo $pagination->get(); ?>
                 </div><!--features_items-->
 
             </div>
