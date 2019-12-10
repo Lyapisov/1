@@ -88,11 +88,10 @@
                                 </div>
                             </div>
                         <?php endforeach; ?>
-                    </div>
-                        <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+                        <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev" id="prev">
                             <i class="fa fa-angle-left"></i>
                         </a>
-                        <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+                        <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next" id="next">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     </div>
